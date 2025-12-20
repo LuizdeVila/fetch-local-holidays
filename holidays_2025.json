@@ -1,0 +1,54 @@
+[
+  {
+    "state": "SP",
+    "city": "CAMPINAS",
+    "holidays": [
+      {
+        "date": "09/07/2026 quinta-feira",
+        "state": "SP",
+        "city": "CAMPINAS",
+        "type": "Permanente"
+      },
+      {
+        "date": "20/11/2026 sexta-feira",
+        "state": "SP",
+        "city": "CAMPINAS",
+        "type": "Permanente"
+      }
+    ],
+    "status": "success",
+    "updatedAt": "2025-12-20T15:30:46.250Z"
+  },
+  {
+    "state": "SP",
+    "city": "VALINHOS",
+    "holidays": [
+      {
+        "date": "20/01/2026 terça-feira",
+        "state": "SP",
+        "city": "VALINHOS",
+        "type": "Permanente"
+      },
+      {
+        "date": "28/05/2026 quinta-feira",
+        "state": "SP",
+        "city": "VALINHOS",
+        "type": "Permanente"
+      },
+      {
+        "date": "09/07/2026 quinta-feira",
+        "state": "SP",
+        "city": "VALINHOS",
+        "type": "Permanente"
+      },
+      {
+        "date": "20/11/2026 sexta-feira",
+        "state": "SP",
+        "city": "VALINHOS",
+        "type": "Permanente"
+      }
+    ],
+    "status": "success",
+    "updatedAt": "2025-12-20T15:30:54.741Z"
+  }
+]
