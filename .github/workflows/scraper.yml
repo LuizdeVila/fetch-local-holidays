@@ -1,0 +1,40 @@
+name: Holiday Scraper
+
+on:
+  schedule:
+    - cron: '0 12 1 1 *' # Meio-dia UTC em 01/Jan
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npx puppeteer browsers install chrome
+
+      - name: Run Scraper
+        env:
+          LOCATIONS: ${{ secrets.LOCATIONS }}
+        run: node fetch-local-holidays.js
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add *.json
+          git commit -m "chore: update holidays for the new year [skip ci]" || echo "No changes to commit"
+          git push

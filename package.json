@@ -1,0 +1,9 @@
+{
+  "name": "fetch-local-holidays",
+  "version": "1.0.0",
+  "main": "fetch-local-holidays.js",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "puppeteer": "^21.6.0"
+  }
+}
