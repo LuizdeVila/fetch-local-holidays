@@ -1,0 +1,16 @@
+[
+  {
+    "state": "SP",
+    "city": "CAMPINAS",
+    "holidays": [],
+    "status": "error",
+    "errorMessage": "Waiting failed: 30000ms exceeded"
+  },
+  {
+    "state": "SP",
+    "city": "VALINHOS",
+    "holidays": [],
+    "status": "error",
+    "errorMessage": "Waiting failed: 30000ms exceeded"
+  }
+]
